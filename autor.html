@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" width="50" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="dinamica.html">Dinamica</a></li>
+                <li><a href="autor.html">Contacto</a></li>
+            </ul>
+            <div class="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <center></center>
+        <div>  
+            <div>
+                <img src="mia.jpg" width="150" height="150">
+            </div>
+            <div>
+                <section id="home">
+                <h1>Alison Arlet Garcia Esquivel</h1>
+                </section>
+                <section id="about">
+                    <h2>Sobre Mi</h2>
+                    <p>Licenciatura en Informatica</p>
+                </section>
+
+                <section id="contact">
+                    <h2>Contacto</h2>
+                    <p>arletgesquivel@gmail.com</p>
+                </section>
+            </div>    
+        </div>
+        
+        <img src="collage.png" width="700" height="500">
+    </main>
+
+    <script>
+        // Toggle menú en dispositivos móviles
+        const menuIcon = document.querySelector('.menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
